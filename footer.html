@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            width: 200px;
+            filter: invert(100%);
+        }
+             /* footer */
+        footer {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            height: 100%px;
+            padding: 15px;
+        }
+
+        .social {
+            margin: 14px 140px;
+            display: flex;
+
+        }
+
+        .social img {
+            margin: 5px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .u-links {
+            margin: 25px;
+        }
+
+        .u-links a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        .newsletter{
+            margin: 0px 134px; 
+            padding: 40px 20px;
+        }
+        .newsletter input[type=text]{
+            padding: 18px; width: 70%;
+             border-radius: 20px;
+             text-align: left; 
+             font-size: 12px;
+
+
+        }
+        @media screen and (max-width: 1024px) {
+            .newsletter{
+                margin: 15px;
+            }
+            .newsletter input[type=text]{
+                width: 100%;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+            }
+            .social{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin: 20px;
+            }
+            .u-links{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin: 20px;
+
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="newsletter">
+        <p style="padding: 0px 0px 24px;text-align: center;">SIGN UP FOR OUR NEWSLETTER</p>
+        <div style="text-align: left;">
+            <input type="text"
+                placeholder="Enter Email...">
+            <button style="padding: 18px;
+        border: none;
+        background-color: black;color: white;border-radius: 20px;margin: 10px;width: 14em;
+    ">SUBSCRIBE</button>
+        </div>
+    </div>
+    <hr style="height: 0.01em;background-color: #d4cfcf; border: none;margin: 30px 110px;">
+    <footer>
+        <div class="logo">
+            <a href="index.html"> <img src="img2/IAlogo.png" alt="logo"></a>
+        </div>
+        <div class="social" >
+            <a href="#"> <img src="img2/icon/Facebook.png" alt=""></a>
+            <a href="#"> <img src="img2/icon/Youtube.png" alt="">
+                <a href="#"> <img src="img2/icon/twitter.png" alt=""></a>
+                <a href="#"> <img src="img2/icon/Instagram.png" alt=""></a>
+            </div>
+            <div class="u-links">
+                <a href="#"> FIND IA </a>
+                <a href="#"> Join US</a> 
+                <a href="contactus.html"> Contact Us</a> 
+                <a href="#"> PRIVACY</a>
+            </div>
+        </footer>
+        
+    </body>
+    </html>

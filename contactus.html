@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us | AI</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 19px;
+        }
+
+        .upper-txt {
+            height: 50px;
+            background-color: rgb(62, 61, 61);
+            font-size: 30px;
+            text-align: right;
+            padding: 30px 20px;
+            color: white;
+        }
+
+        .upper-txt:hover {
+            cursor: pointer;
+
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 25% 75%;
+        }
+
+        .side {
+
+            background-color: white;
+        }
+
+        .main-content {
+            background-color: rgb(238, 239, 240)
+        }
+
+        .main-txt {
+            margin: 150px 103px;
+
+        }
+
+        .main-txt p {
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+
+
+        .in-txt {
+            margin: 20px 70px;
+            font-size: 20px;
+            line-height: 60px;
+        }
+
+        .in-txt input,
+        select {
+            border: none;
+            height: 40px;
+            padding: 0px 10px;
+            color: grey;
+        }
+
+        textarea {
+            margin-top: 20px;
+            border: none;
+            width: 100%;
+        }
+
+        .in-txt button {
+            background-color: white;
+            border: none;
+            margin-right: 1px;
+        }
+
+        .in-txt button:hover {
+            background-color: grey;
+
+        }
+
+
+        /* Aside contents */
+        .side div {
+            margin: 50px 50px;
+            font-size: 20px;
+        }
+
+        .l-head {
+            font-weight: bold;
+        }
+
+        .side-links {
+            padding: 15px 0px;
+            color: grey;
+
+        }
+
+        .side-links a {
+            color: grey;
+        }
+
+        .side-links a:hover {
+            background-color: grey;
+            color: white;
+
+        }
+        /*Responsive*/
+@media screen and (max-width: 1024px) {
+    .upper-txt{
+        font-size: 18px;
+    }
+    .container{
+        display: block;
+    }
+    .main-txt{
+        margin: 70px 20px;
+    }
+    .in-txt{
+        margin: 0px ;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+    .in-txt input,
+        select {
+            border: none;
+            height: 20px;
+           
+        }
+}
+    </style>
+</head>
+
+<body>
+    <div class="upper-txt">
+        COVID-19 Update: How Figure3 Can Support Your Return-To-Work Strategy
+    </div>
+    <div class="container">
+        <div class="side">
+
+            <span style="filter: invert(100%);">
+              <a href="index.html">  <img width="80%" src="img2/IAlogo.png" alt=""></a>
+
+            </span>
+            <div>
+                <p class="l-head"> HEAD OFFICE </p>
+                <p class="side-links">200-200 University Avenue, Toronto, Ontario, Canada M5H 3C6 <br>
+
+                    <a href=""> view on map </a><br><br><br>
+                    416 363 6993 <br>
+                    <a href=""> post@figure3.com</a>
+                </p>
+
+            </div>
+            <div style="margin-top: 61px;">
+                <p class="l-head">INQUIRIES </p>
+                <p class="side-links"> For new business, contact:
+
+                    <a href=""> opportunities@figure3.com</a>
+                </p>
+
+            </div>
+            <div style="margin-top: 61px;">
+
+
+                <p class="l-head">
+                    CONNECT</p>
+                <p class="side-links">
+                    <a href="#"> LinkedIn </a><br>
+                    <a href="#"> Instagram </a><br>
+                    <a href="#"> Twitter</a> <br>
+                    <a href="#"> Facebook</a>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-txt">
+                <p> Whether you're rethinking your office space, reinventing condo living or upping the ante
+                    on your bricks and mortar retail, we'd love to help. Drop us a line. </p>
+                <form action="mail_handler.php" name="form" method="POST">
+                    <div class="in-txt">
+
+                        My name is <input type="text" name="name" placeholder="Full Name*" required>
+
+
+                        and I work with <input type="text" name="org" placeholder="Organization*" required>
+
+
+                        I'm working on a project for <select name="project" id="" required>
+                            <option value="Project Type*" selected>Project Type*</option>
+                            <option value="Residential">Residential</option>
+                            <option value="WorkPace">WorkPace</option>
+                            <option value="Residential">Residential</option>
+                        </select>
+
+
+
+                        and I need help with
+                        <select name="subcatg" id="" required>
+                            <option value="Sub Category" selected>Sub Category*</option>
+                            <option value="Research-strategy">Research And Strategy</option>
+                            <option value="Multi-family">Multi Family high rise</option>
+                            <option value="Model-home">Model Home</option>
+                            <option value="Model-home">Model Home</option>
+                            <option value="Model-home">Model Home</option>
+                            <option value="Model-home">Model Home</option>
+                        </select>
+
+
+                        The approximate size is <input type="text" name="psize" placeholder="Project Size*" required>
+
+
+                        You can contact me by email at <input name="email" type="text" placeholder="Email Address*"
+                            required>
+
+
+                        or give me a call at <input type="text" name="phone" placeholder="Phone Number*" required>
+
+                        <textarea name="msg" id="" cols="10" rows="10" placeholder="Comments"></textarea>
+                        <button name="submit" value="send"
+                            style="width: 60px;font-size: 20px;margin-left: 89%;">Send</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

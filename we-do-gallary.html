@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What-we-do</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .outer-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 10px;
+
+        }
+
+        .card {
+            margin: 11px;
+            border: 2px solid black;
+            height: 280px;
+            width: 500px;
+        }
+
+        .bg {
+
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .i-txt {
+            position: relative;
+            top: 50%;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .bg1 {
+            background-image: url('img2/a.jpg');
+        }
+
+        .bg2 {
+            background-image: url('img2/b.jpg');
+        }
+
+        .bg3 {
+            background-image: url('img2/c.jpg');
+        }
+
+        .bg4 {
+            background-image: url('img2/d.jpg');
+        }
+
+        .bg5 {
+            background-image: url('img2/e.jpg');
+        }
+
+        .bg6 {
+            background-image: url('img2/f.jpg');
+        }
+
+        .bg6 {
+            background-image: url('img2/f.jpg');
+        }
+
+        .bg6 {
+            background-image: url('img2/f.jpg');
+        }
+
+        .bg6 {
+            background-image: url('img2/f.jpg');
+        }
+
+        .bg6 {
+            background-image: url('img2/f.jpg');
+        }
+
+        .bg6 {
+            background-image: url('img2/f.jpg');
+        }
+
+        .bg6 {
+            background-image: url('img2/f.jpg');
+        }
+
+        #second,
+        #third,
+        #four {
+            display: none;
+        }
+
+
+        .g-links {
+            display: flex;
+            padding: 15px;
+        }
+
+        .g-links a {
+            margin: 10px 20px;
+            padding: 8px 35px;
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+        }
+
+        .g-links a:hover {
+            color: rgb(237, 180, 30);
+            background-color: rgb(240, 234, 234);
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .card {
+                height: 250px;
+
+                width: auto;
+            }
+
+            .outer-container {
+                grid-template-columns: 100%;
+            }
+
+            .g-links {
+                flex-direction: column;
+            }
+        
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="g-links">
+        <a onclick="first()">FEATURED</a></button>
+        <a onclick="second()">WORKPLACE</a>
+        <a onclick="third()">HOSPITALITY</a>
+        <a onclick="four()">RETAIL</a>
+    </div>
+    <!-- first gallary images links -->
+    <div id="first" class="outer-container">
+        <div class="card bg bg1">
+            <div class="i-txt">
+                Home Chef
+            </div>
+        </div>
+        <div class="card bg bg2">
+            <div class="i-txt">
+                Carta
+            </div>
+        </div>
+        <div class="card bg bg3">
+            <div class="i-txt">
+                Starling Bay
+            </div>
+        </div>
+        <div class="card bg bg4">
+            <div class="i-txt">
+                MGA Entertainmnet
+            </div>
+        </div>
+        <div class="card bg bg5">
+            <div class="i-txt">
+                REI
+            </div>
+        </div>
+
+        <div class="card bg bg6">
+            <div class="i-txt">
+                Okta Headquater
+            </div>
+        </div>
+    </div>
+
+    <!-- second link for another gallry  -->
+    <div id="second" class="outer-container">
+        <div class="card bg bg1">
+            <div class="i-txt">
+
+                Confidential Company
+            </div>
+        </div>
+        <div class="card bg bg2">
+            <div class="i-txt">
+                Arch Insurance
+
+            </div>
+        </div>
+        <div class="card bg bg3">
+            <div class="i-txt">
+                HP Inc.
+            </div>
+        </div>
+        <div class="card bg bg4">
+            <div class="i-txt">
+                01 Advisors
+            </div>
+        </div>
+        <div class="card bg bg5">
+            <div class="i-txt">
+                Home Chef
+            </div>
+        </div>
+
+        <div class="card bg bg6">
+            <div class="i-txt">
+                Lockton Companies
+            </div>
+        </div>
+    </div>
+    <!-- Third link for another gallry  -->
+    <div id="third" class="outer-container">
+        <div class="card bg bg1">
+            <div class="i-txt">
+
+                Sandy Springs City Center
+            </div>
+        </div>
+        <div class="card bg bg2">
+            <div class="i-txt">
+                American Express Centurion Lounge
+            </div>
+        </div>
+        <div class="card bg bg3">
+            <div class="i-txt">
+                American Airlines
+            </div>
+        </div>
+        <div class="card bg bg4">
+            <div class="i-txt">
+                Yo! Sushi
+            </div>
+        </div>
+        <div class="card bg bg5">
+            <div class="i-txt">
+                Co Co. Sala
+            </div>
+        </div>
+
+        <div class="card bg bg6">
+            <div class="i-txt">
+                Pressed Cafe
+            </div>
+        </div>
+    </div>
+    <!-- fourth link for another gallry  -->
+    <div id="four" class="outer-container">
+        <div class="card bg bg1">
+            <div class="i-txt">
+
+                West Elm, Toronto
+            </div>
+        </div>
+        <div class="card bg bg2">
+            <div class="i-txt">
+                REI
+            </div>
+        </div>
+        <div class="card bg bg3">
+            <div class="i-txt">
+                Capital One Café
+            </div>
+        </div>
+        <div class="card bg bg4">
+            <div class="i-txt">
+                Wayfair Retail Prototype
+            </div>
+        </div>
+        <div class="card bg bg5">
+            <div class="i-txt">
+                American Express Centurion Lounge
+            </div>
+        </div>
+
+        <div class="card bg bg6">
+            <div class="i-txt">
+                American Airlines
+            </div>
+        </div>
+    </div>
+    <script>
+        function first() {
+            document.getElementById("first").style.display = "grid";
+            document.getElementById("first").style.color = "rgb(237,180,30)";
+            document.getElementById("second").style.display = "none";
+            document.getElementById("third").style.display = "none";
+            document.getElementById("four").style.display = "none";
+
+
+        }
+
+        function second() {
+            document.getElementById("second").style.display = "grid";
+            document.getElementById("first").style.display = "none";
+            document.getElementById("third").style.display = "none";
+            document.getElementById("four").style.display = "none";
+
+
+
+        }
+        function third() {
+            document.getElementById("third").style.display = "grid";
+            document.getElementById("third").style.color = "rgb(237,180,30)";
+            document.getElementById("first").style.display = "none";
+            document.getElementById("second").style.display = "none";
+            document.getElementById("four").style.display = "none";
+
+
+
+        }
+        function four() {
+            document.getElementById("four").style.display = "grid";
+            document.getElementById("four").style.color = "rgb(237,180,30)";
+            document.getElementById("first").style.display = "none";
+            document.getElementById("second").style.display = "none";
+            document.getElementById("third").style.display = "none";
+
+
+        }
+
+    </script>
+</body>
+
+</html>
